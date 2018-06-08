@@ -1,0 +1,106 @@
+/*
+These are the responsive styles. Throw some breakpoints in here!
+*/
+.container, .featured_work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 449px) {
+  .header__title {
+    font-size: 2.8em;
+  }
+  .header__subtitle {
+    font-size: 1.15em;
+  }
+  .cover, .wa, .wb, .wc {
+    width: 100%;
+  }
+  .left, .right, .center {
+    margin-left: 0;
+    margin-right: 0;
+    height: 150px;
+  }
+  .right, .center {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 700px) {
+  .cover, .wa, .wb, .wc {
+    width: 100%;
+  }
+
+  .header__title {
+    font-size: 2.8em;
+  }
+
+  .header__subtitle {
+    font-size: 1.15em;
+  }
+
+  .left, .right, .center {
+    margin-left: 0;
+    margin-right: 0;
+    height: 150px;
+  }
+
+  .right, .center {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 701px){
+  .cover {
+    width: 100%;
+  }
+
+  .wa, .wb, .wc {
+    width: 33.333333%
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container{
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* .wrapper {
+    min-height: 100%;
+    margin: 0 auto -90px;
+  } */
+  .footer, .push {
+    height: 90px;
+  }
+
+  .cover{
+    width: 100%;
+  }
+
+  .wa, .wb, .wc {
+    width: 33.3333%;
+  }
+
+  .header__subtitle {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: right;
+    margin-right: 12px;
+    margin-top: 0;
+  }
+
+  .header__title {
+    font-size: 3.5em;
+    font-weight: 100;
+    margin-right: 12px;
+  }
+
+  h2 {
+    font-size: 2.2em;
+  }
+  .footer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
